@@ -207,3 +207,18 @@ daemonset.apps/ebs-csi-node created
 csidriver.storage.k8s.io/ebs.csi.aws.com created
 $ unset http_proxy
 $ unset https_proxy
+
+
+============================================
+docker rm -fv  $(docker ps -a -q) 
+docker volume rm -f $(docker volume ls)
+sudo reboot -h now
+sudo.../var/lib/etcd
+rm -rf /var/lib/kubelet
+rm -rf /var/lib/rancher
+rm -rf /etc/kubernetes
+rm -rf /opt/rke
+exit
+docker volume rm -f $(docker volume ls)
+sudo reboot -h now
+===========================================================
